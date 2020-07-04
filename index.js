@@ -1,24 +1,43 @@
-function baseDireita() {
-    const baseDireita = document.getElementById('baseDireita').value // pega o valor do input
-    const editar = document.getElementById('bloco').style.borderBottomRightRadius = `${baseDireita}px` // adiciona estilo borda
-    return editar 
+// pegar os inputs das bordas
+const bordas = document.querySelectorAll('.bordas')
+      topLeft = document.querySelector('#topoEsquerda')
+      topRight = document.querySelector('#topoDireita')
+      bottomLeft = document.querySelector('#baseEsquerda')
+      bottomRight = document.querySelector('#baseDireita')
+
+// pegar o text area e o bloco que vai receber a borda
+const codigo = document.querySelector('#codigo')
+const bloco = document.querySelector('#bloco')
+const copiar = document.querySelector('#copiar')
+
+var areatext = codigo.innerHTML
+
+// aplicar borda
+function aplicar() {
+    //adicionar valor
+    let valor = `${topLeft.value}px ${topRight.value}px ${bottomLeft.value}px ${bottomRight.value}px`
+    console.log('valor')
+    bloco.style.borderRadius = valor
+
+    codigo.innerHTML = mostrarCodigo(topLeft.value, topRight.value, bottomLeft.value, bottomRight.value) 
 }
 
-function baseEsquerda() {
-    const baseEsquerda = document.getElementById('baseEsquerda').value
-    const editar = document.getElementById('bloco').style.borderBottomLeftRadius = `${baseEsquerda}px`
-    return editar
+function mostrarCodigo(topLeft, topRight, bottomLeft, bottomRight) {
+    const adicionarCodigo = `
+        -webkit-border-radius: ${topLeft}px ${topRight}px ${bottomLeft}px ${bottomRight}px;
+        -moz-border-radius: ${topLeft}px ${topRight}px ${bottomLeft}px ${bottomRight}px;
+        border-radius: ${topLeft}px ${topRight}px ${bottomLeft}px ${bottomRight}px;
+    `
+    
+    return adicionarCodigo
 }
 
-function topoDireita() {
-    const topoDireita = document.getElementById('topoDireita').value
-    const editar = document.getElementById('bloco').style.borderTopRightRadius = `${topoDireita}px`
-    return editar
+function copiarTexto() {
+    const novaCopia = document.createElement('textarea')
+    novaCopia.value = codigo.textContent
+    console.log(novaCopia.value)
+    document.body.appendChild(novaCopia)
+    novaCopia.select()
+    document.execCommand('copy')
+    document.body.removeChild(novaCopia)
 }
-
-function topoEsquerda() {
-    const topoEsquerda = document.getElementById('topoEsquerda').value
-    const editar = document.getElementById('bloco').style.borderTopLeftRadius = `${topoEsquerda}px`
-    return editar
-}
-

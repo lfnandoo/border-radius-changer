@@ -11,7 +11,7 @@ body {
 }
 
 h1 {
-    margin-top: 80px;
+    margin-top: 50px;
     font-size: 3rem;
     display: flex;
     justify-content: center;
@@ -36,6 +36,23 @@ input {
     text-align: center;
 }
 
+button {
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+    border: 1px solid black;
+    cursor: pointer;
+    margin-left: 35%;
+    margin-bottom: 30px;
+
+    transition: 200ms;
+}
+
+button:focus {
+    background-color: green;
+    
+}
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -50,5 +67,8 @@ input::-webkit-inner-spin-button {
 
 .bloco textarea {
     margin: 50px;
+    margin-bottom: 20px;
     resize: none;
+    color: rgb(65, 65, 65);
+    font-weight: 600;
 }

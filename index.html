@@ -19,12 +19,13 @@
     <main>
         <div id="bloco" class="bloco">
             <textarea disabled id="codigo" cols="30" rows="10"></textarea>
+            <button id="copiar" onclick="copiarTexto()" >Copiar Código</button>
         </div>
         <div class="input">
-            <input type="number" class="inputs" id="topoEsquerda" oninput="topoEsquerda()">
-            <input type="number" class="inputs" id="topoDireita" oninput="topoDireita()">
-            <input type="number" class="inputs" id="baseEsquerda" oninput="baseEsquerda()">
-            <input type="number" class="inputs" id="baseDireita" oninput="baseDireita()">
+            <input type="number" min="0" value="0" class="bordas" id="topoEsquerda" oninput="aplicar()">
+            <input type="number" min="0" value="0" class="bordas" id="topoDireita" oninput="aplicar()">
+            <input type="number" min="0" value="0" class="bordas" id="baseEsquerda" oninput="aplicar()">
+            <input type="number" min="0" value="0" class="bordas" id="baseDireita" oninput="aplicar()">
         </div>
     </main>
 </body>
