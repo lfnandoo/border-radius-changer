@@ -29,7 +29,11 @@ A aplicação criada por mim para fixar e praticar o Javascript durante meu proc
 ## 🔖 Layout
 
 <p align="center">
-  <img alt="BorderRadiusLayout" src="https://imgur.com/pHKD7cl.png" width="100%">
+  <img alt="BorderRadiusLayout" src="https://imgur.com/Z3kmn4Y.png" width="100%">
+</p>
+
+<p align="center">
+  <img alt="BorderRadiusLayout2" src="https://imgur.com/VWJZ0q9.png" width="100%">
 </p>
 
 ---
