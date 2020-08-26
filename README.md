@@ -38,5 +38,5 @@ A aplicação criada por mim para fixar e praticar o Javascript durante meu proc
 
 ---
 
-Feito com 💜 por Luiz Fernando :wave: [Linkedin](https://www.linkedin.com/in/luizfernandoo/) & [Twitter](https://www.twitter.com/lfnandoo/)
+Feito com 💜 por Luiz Fernando :wave: [Linkedin](https://www.linkedin.com/in/luizfernandoo/)
 
